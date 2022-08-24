@@ -17,6 +17,8 @@ public class dtoProyectos {
     private String descripcionPro;
       @NotBlank
     private String imgPro;
+   
+    private String urlPro;
       
       
        //Constructores
@@ -24,10 +26,11 @@ public class dtoProyectos {
     public dtoProyectos() {
     }
 
-    public dtoProyectos(String nombrePro, String descripcionPro, String imgPro) {
+    public dtoProyectos(String nombrePro, String descripcionPro, String imgPro, String urlPro) {
         this.nombrePro = nombrePro;
         this.descripcionPro = descripcionPro;
         this.imgPro = imgPro;
+         this.urlPro = urlPro;
     }
       
           //Getters & Setters
@@ -54,6 +57,15 @@ public class dtoProyectos {
 
     public void setImgPro(String imgPro) {
         this.imgPro = imgPro;
+    }
+    
+    
+      public String getUrlPro() {
+        return urlPro;
+    }
+
+    public void setUrlPro(String urlPro) {
+        this.urlPro = urlPro;
     }
     
       
